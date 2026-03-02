@@ -1,0 +1,13 @@
+.autogit
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# AWS CLI files
+aws/
+awscliv2.zip
+
+# Sensitive
+*.tfvars
