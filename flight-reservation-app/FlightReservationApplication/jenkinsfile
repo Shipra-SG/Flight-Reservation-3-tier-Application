@@ -10,7 +10,7 @@ pipeline {
     stage ('Build') {
             steps {
                 sh '''
-                 cd FlightReservationApplication
+                 cd flight-reservation-app/FlightReservationApplication
                  mvn clean package -DskipTests
                 '''
             }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 withSonarQubeEnv(installationName: 'sonar' , credentialsId: 'sonar') {
                 sh '''
-                 cd FlightReservationApplication
+                 cd flight-reservation-app/FlightReservationApplication
                  mvn clean verify sonar:sonar \
                  -DskipTests \
                  -Dsonar.projectKey=flight-app \
@@ -33,7 +33,7 @@ pipeline {
     stage ('Docker Build') {
             steps {
                 sh '''
-                 cd FlightReservationApplication
+                 cd flight-reservation-app/FlightReservationApplication
                  docker build -t shiprag321/flight-reservation-backend:latest .
                  docker push shiprag321/flight-reservation-backend:latest
                  docker rmi shiprag321/flight-reservation-backend:latest
@@ -43,7 +43,7 @@ pipeline {
     stage ('Deploy') {
             steps {
                 sh '''
-                 cd FlightReservationApplication/k8s
+                 cd flight-reservation-app/FlightReservationApplication/k8s
                  kubectl apply -f .
                 '''
                 }
