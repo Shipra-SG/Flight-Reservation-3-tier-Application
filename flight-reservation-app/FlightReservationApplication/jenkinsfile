@@ -43,9 +43,12 @@ pipeline {
     stage ('Deploy') {
             steps {
                 sh '''
-                 cd FlightReservationApplication
-                 cd k8s
-                 kubectl apply -f .
+                 pwd
+                 ls
+                 ls FlightReservationApplication
+                 ls FlightReservationApplication/k8s
+                 kubectl get nodes
+                 kubectl apply -f FlightReservationApplication/k8s/
                 '''
                 }
             }
