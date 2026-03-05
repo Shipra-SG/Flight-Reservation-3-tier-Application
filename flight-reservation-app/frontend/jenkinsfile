@@ -1,1 +1,31 @@
+pipeline {
+    agent any
 
+    stages {
+
+        stage ('Code-pull') {
+            steps{
+                git branch: 'main', url: 'https://github.com/Shipra-SG Flight-Reservation-3-tier-Application.git'
+            }
+        }
+
+        stage ('Build') {
+            steps{
+                sh '''
+                cd Flight-Reservation-3-tier-Application/flight-reservation-app/frontend
+                npm install
+                npm run build
+                '''
+            }
+        }
+
+        stage ('Deploy') {
+            steps{
+                sh '''
+                cd Flight-Reservation-3-tier-Application/flight-reservation-app/frontend
+                aws s3 sync dist/ s3://flight-frontend-project-bucket/
+                '''
+            }
+        }
+    }
+}
