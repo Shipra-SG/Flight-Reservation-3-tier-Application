@@ -12,7 +12,7 @@ pipeline {
         stage ('Build') {
             steps{
                 sh '''
-                cd Flight-Reservation-3-tier-Application/flight-reservation-app/frontend
+                cd flight-reservation-app/frontend
                 npm install
                 npm run build
                 '''
@@ -22,7 +22,7 @@ pipeline {
         stage ('Deploy') {
             steps{
                 sh '''
-                cd Flight-Reservation-3-tier-Application/flight-reservation-app/frontend
+                cd flight-reservation-app/frontend
                 aws s3 sync dist/ s3://flight-frontend-project-bucket/
                 '''
             }
