@@ -43,7 +43,7 @@ pipeline {
     stage ('Deploy') {
             steps {
                 sh '''
-                 cd flight-reservation-app/FlightReservationApplication/k8s
+                 cd FlightReservationApplication/k8s
                  kubectl apply -f .
                 '''
                 }
