@@ -42,6 +42,7 @@ AWS RDS (Database)
 * AWS S3
 * AWS RDS
 
+![instance](screenshots/Project-instance.png)
 ![Flow](screenshots/Flow.png)
 ![AWS EKS](screenshots/EKS-Cluster.png)
 ![AWS S3](screenshots/S3-Bucket.png)
@@ -169,6 +170,8 @@ Benefits of Kubernetes:
 * Auto scaling
 * Self-healing containers
 
+![Deploy](screenshots/deploy.png)
+
 ---
 
 # Database (AWS RDS)
@@ -182,6 +185,8 @@ Benefits:
 * High availability
 * Secure connectivity
 
+![RDS-Config](screenshots/RDS-Config.png)
+
 ---
 
 # Storage (AWS S3)
@@ -194,32 +199,9 @@ AWS S3 is used for:
 
 ---
 
-# How to Run the Project
+# Successfully Access the Application
 
-### Step 1 – Clone the Repository
-
-```
-git clone https://github.com/Shipra-SG/Flight-Reservation-3-tier-Application.git
-```
-
-### Step 2 – Build Docker Images
-
-```
-docker build -t flight-reservation .
-```
-
-### Step 3 – Deploy Infrastructure
-
-```
-terraform init
-terraform apply
-```
-
-### Step 4 – Deploy to Kubernetes
-
-```
-kubectl apply -f k8s/
-```
+![Successfully-run](screenshots/Successfully-run.png)
 
 ---
 
