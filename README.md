@@ -114,6 +114,10 @@ The Jenkins pipeline automates the application build and deployment process.
 
 This pipeline ensures **continuous integration and automated deployment**.
 
+![Jenkins](screenshots/Jenkins.png)
+![Backend-deploy](screenshots/Backend-deploy.png)
+![Frontend-Deploy](screenshots/Frontend-Deploy.png)
+
 ---
 
 # Code Quality Analysis (SonarQube)
@@ -126,6 +130,8 @@ SonarQube is integrated into the Jenkins pipeline to analyze:
 * Code smells
 
 This helps maintain **high quality and secure code**.
+
+![Sonarqube](screenshots/Sonarqube-Testing.png)
 
 ---
 
