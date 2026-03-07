@@ -44,7 +44,7 @@ AWS RDS (Database)
 
 ![Flow](screenshots/Flow.png)
 ![AWS EKS](screenshots/EKS-Cluster.png)
-![AWS S3](screenshots/S3 Bucket.png)
+![AWS S3](screenshots/S3-Bucket.png)
 ![AWS RDS](screenshots/RDS.png)
 
 
