@@ -42,12 +42,12 @@ AWS RDS (Database)
 * AWS S3
 * AWS RDS
 
-```
 ![Flow](screenshots/Flow.png)
 ![AWS EKS](screenshots/EKS-Cluster.png)
 ![AWS S3](screenshots/S3 Bucket.png)
 ![AWS RDS](screenshots/RDS.png)
-```
+
+
 ### DevOps Tools
 
 * Jenkins
