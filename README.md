@@ -1,3 +1,12 @@
+![AWS](https://img.shields.io/badge/AWS-EKS%20%7C%20RDS%20%7C%20S3-orange?logo=amazonaws)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue?logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-blue?logo=kubernetes)
+![SonarQube](https://img.shields.io/badge/SonarQube-Code%20Quality-green?logo=sonarqube)
+
+---
+
 # **Flight Reservation System – 3 Tier DevOps Deployment**
 
 ---
@@ -9,6 +18,19 @@ This project demonstrates the deployment of a **Flight Reservation System** usin
 The application is containerized using Docker and deployed on **AWS EKS (Kubernetes)**. The infrastructure is provisioned using **Terraform**, and a **CI/CD pipeline is implemented using Jenkins**. Code quality is analyzed using **SonarQube**, while AWS services such as **S3 and RDS** are used for storage and database management.
 
 The main objective of this project is to simulate a **production-like DevOps workflow**, covering infrastructure automation, container orchestration, CI/CD automation, and cloud deployment.
+
+---
+
+## 📁 Repository Structure
+├── flight-reservation-app/    # Application source code
+│   ├── backend/               # Java Spring Boot
+│   ├── frontend/              # React UI
+│   └── Jenkinsfile            # CI/CD Pipeline
+├── cbz-three-tier-infra/      # Terraform IaC
+│   ├── eks/                   # EKS Cluster config
+│   ├── rds/                   # Database config
+│   └── s3/                    # Storage config
+└── screenshots/               # Project screenshots
 
 ---
 
@@ -218,16 +240,7 @@ Through this project, I gained hands-on experience with:
 
 ---
 
-# Future Improvements
-
-* Implement monitoring using Prometheus and Grafana
-* Add Helm charts for Kubernetes deployments
-* Integrate automated testing in the CI/CD pipeline
-* Add auto scaling policies
-
----
-
 # Author
-
-**Shipra**
-DevOps Enthusiast | Cloud & Automation Learner
+Shipra Gupta
+DevOps & Cloud Engineer | AWS • Kubernetes • Terraform | 
+Open to Work
